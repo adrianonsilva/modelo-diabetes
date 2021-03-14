@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>Diabetes Model</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+    <body>
+		<table>
+			<tr>
+				<td class="titulo">
+					Informe os Valores
+				</td>
+			</tr>
+		</table>
+		<br>
+
+<form action = "http://192.168.1.103:5000/pagina" method = "post">
+
+        <table cellspacing="0" cellpadding="2" width="40%" border="1">
+            <tr>
+            	<td ALIGN="left" class="texto">
+					Pregnancies
+				</td>
+                <td ALIGN="left" class="texto">
+                    <input type = text name = "pregnancies" value = "{{ pregnancies }}">
+                </td>
+            </tr>
+            <tr>
+		<td ALIGN="left" class="texto">
+					Glucose
+				</td>            
+                <td ALIGN="left" class="texto">
+                    <input type = text name = "glucose" value = "{{ glucose }}">
+                </td>
+            </tr>
+            <tr>
+		<td ALIGN="left" class="texto">
+					BloodPressure
+				</td>            
+                <td ALIGN="left" class="texto">
+                    <input type = text name = "bloodpressure" value = "{{ bloodpressure }}">
+                </td>
+            </tr>	
+            <tr>
+		<td ALIGN="left" class="texto">
+					SkinThickness
+				</td>            
+                <td ALIGN="left" class="texto">
+                    <input type = text name = "skinthickness" value = "{{ skinthickness }}">
+                </td>
+            </tr>	
+	    <tr>
+		<td ALIGN="left" class="texto">
+					Insulin
+				</td>            
+                <td ALIGN="left" class="texto">
+                    <input type = text name = "insulin" value = "{{ insulin }}">
+                </td>
+            </tr>	
+	    <tr>
+		<td ALIGN="left" class="texto">
+					BMI
+				</td>            
+                <td ALIGN="left" class="texto">
+                    <input type = text name = "bmi" value = "{{ bmi }}">
+                </td>
+            </tr>	
+	    <tr>
+		<td ALIGN="left" class="texto">
+					DiabetesPedigreeFunction
+				</td>            
+                <td ALIGN="left" class="texto">
+                    <input type = text name = "diabfunction" value = "{{ diabfunction }}">
+                </td>
+            </tr>
+	    <tr>
+		<td ALIGN="left" class="texto">
+					Age
+				</td>            
+                <td ALIGN="left" class="texto">
+                    <input type = text name = "age" value = "{{ age }}">
+                </td>
+            </tr>	
+	    <tr>
+		<td ALIGN="left" class="texto">
+					&nbsp;
+				</td>            
+                <td ALIGN="left" class="texto">
+                    &nbsp;
+                </td>
+            </tr>		
+	    <tr>
+	    	<td ALIGN="left" class="texto">
+					Outcome
+				</td>            
+                <td ALIGN="left" class="texto">
+                    {{ Outcome }}
+                </td>
+            </tr>					
+        </table>
+		<br>
+		<input type="submit" value = "Calculate"  value="Calcular"/>
+</form>
+
+        <br>
+    </body>
+</html>

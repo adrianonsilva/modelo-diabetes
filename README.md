@@ -142,10 +142,46 @@ A acurácia foi menos, mas nesse caso foram usados dados não vistos pelo modelo
 <a id="link4"></a>
 ## 4. Deploy
 
+Para o deploy do modelo será usado o micro framework web baseado em python, devido a sua facilidade na implemantação.
+
+Se não estiver presente no ambiente, efetuar a instalação.
+
+```pip install flask```
+
+Criar uma estrutura de pastas conforme a imagem:
+
+![Screenshot](/images/m14.jpg)
+
+```python app.py```</br>
+Start da aplicação, expondo a porta 5000 para ser acessado.</br>
+
+![Screenshot](/images/m15.jpg)
+
+```app.py```</br>
+Arquivo principal da aplicação, que vai definir as "rotas", que serão acessadas via browser, e os comandos.
+
+```app/static/css/main.css```</br>
+Arquivo com o css usado na página de consulta.
+
+```app/static/model/modelo_diabetes_v1.sav```</br>
+Arquivo com o modelo criado na fase de desenvolvimento.
+
+```app/templates/pagina1.html```</br>
+Arquivo com a página html de consulta</br>
+Ao informar os valores e clicar no botão, os dados serão capturados e o modelo será aplicado. Retornando o resultado.
+
+![Screenshot](/images/m16.jpg)
+
+![Screenshot](/images/m17.jpg)
+
+![Screenshot](/images/m18.jpg)
+
+![Screenshot](/images/m19.jpg)
+
+![Screenshot](/images/m20.jpg)
+
 <a id="link5"></a>
 ## 5. Versões
-
-As versões das bibliotecas usadas foram:
 
 - Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  2 2016, 17:53:06)
 - sklearn = '0.17.1'
