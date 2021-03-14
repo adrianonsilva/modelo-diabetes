@@ -194,3 +194,6 @@ https://www.kaggle.com/uciml/pima-indians-diabetes-database
 
 Scikit-Learn</br>
 https://scikit-learn.org/stable/
+
+Flask</br>
+https://flask.palletsprojects.com/en/1.1.x/
